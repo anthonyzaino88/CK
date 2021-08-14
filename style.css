@@ -529,6 +529,22 @@ ul li a:hover::after {
   }
 }
 
+@media screen and (max-width: 709px) {
+  .bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .pb-3,
   .py-3 {

@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Jura", sans-serif;
+  background-color: gray;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.navbar {
+  background-color: black;
+}
+.navbar-toggler {
+  background-color: black;
+  background-image: url("img/Citrus King.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link {
+  color: orange;
+}
+
+.navbar-brand {
+  color: orange;
+}
+
+#showcase h1 {
+  font-size: 35px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+#showcase p {
+  font-size: 15px;
+}
+
+#showcase {
+  min-height: 250px;
+  color: orange;
+  text-align: center;
+}
+
+#showcase .content-wrap {
+  padding: 1em 1em 1em;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.btn {
+  padding: 10px;
+  color: orange;
+  background-color: black;
+  width: 200px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+#main-footer {
+  padding: 1em;
+  background: orange;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+table {
+  align-content: center;
+}

@@ -221,6 +221,22 @@ ul li a:hover {
 /*---------------------------------------------------------------------------End-Carousel-------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------Start-Shop-Cards---------------------------------------------------------------------------*/
+.shop-header {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 80px;
+  color: black;
+}
+
+.shop-header:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  margin-top: -20px;
+  border-bottom: 1px solid black;
+}
+
 
 .card {
   font-size: 1em;
@@ -728,6 +744,14 @@ a {
     margin-top: -20px;
     border-bottom: 1px solid black;
   }
+  .shop-header:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: -20px;
+    border-bottom: 1px solid black;
+  }
 }
 
 @media screen and (max-width: 976px) {
@@ -757,6 +781,15 @@ a {
     margin-top: -20px;
     border-bottom: 1px solid black;
   }
+  .shop-header:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: -20px;
+    border-bottom: 1px solid black;
+  }
+  
 }
 
 @media screen and (max-width: 682px) {

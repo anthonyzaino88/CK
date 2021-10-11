@@ -801,6 +801,12 @@ a {
     background-color: gray;
     margin-top: 100px;
   }
+  
+  section {
+    height: 600px;
+    background-color: gray;
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 767px) {

@@ -156,11 +156,6 @@ ul li a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-block:hover {
-  transform: scale(1.03);
-  transition: all 0.2s ease-in-out;
-}
-
 .ck_logo {
   padding-top: 5px;
   float: right;
@@ -228,6 +223,10 @@ ul li a:hover {
   color: black;
 }
 
+.shop-bg-img {
+  background: url(ckbg2.png);
+}
+
 .shop-header:after {
   content: "";
   display: block;
@@ -237,25 +236,19 @@ ul li a:hover {
   border-bottom: 1px solid black;
 }
 
-
 .card {
   font-size: 1em;
   overflow: hidden;
-  background: linear-gradient(to bottom, #a6a9ae, #7f8083);
-
+  background: none;
   border: none;
   border-radius: 0.28571429rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   margin-top: 20px;
 }
 
-.card:hover {
+.card-img:hover {
   transform: scale(1.05);
   transition: all 0.4s ease-in-out;
-}
-
-.content-wrap {
-  text-align: center;
 }
 
 .shop-wrap {
@@ -270,7 +263,7 @@ ul li a:hover {
   padding: 15px 15px;
   margin-bottom: 5px;
 
-  filter: drop-shadow(5px 10px 10px black);
+  filter: drop-shadow(2px 5px 5px black);
 }
 
 .shop-title {
@@ -280,20 +273,99 @@ ul li a:hover {
 }
 
 /*-------------------------------------------------------------End-Shop-Cards---------------------------------------------------------------------------*/
+/*------------------------------------------------------------sponsors-------------------------------------------------------------------------------*/
 
+.sponsors-header {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 80px;
+  color: black;
+}
+
+.sponsors-header:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  margin-top: -10px;
+  border-bottom: 1px solid black;
+}
+
+.booras_logo {
+  display: block;
+  padding: 15px 15px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(5px 10px 10px black);
+}
+
+.booras_logo:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.goldstar_logo {
+  padding: 15px 15px 15px 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(5px 10px 10px black);
+}
+
+.goldstar_logo:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.sharpshack_logo {
+  padding: 15px 15px 15px 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(5px 10px 10px black);
+}
+
+.sharpshack_logo:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.envious_logo {
+  display: block;
+  padding: 15px 15px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(5px 10px 10px black);
+}
+
+.envious_logo:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.sponsors-description {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+/*-------------------------------------------------------------------------end-sponsors------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------Start-YoutTube-------------------------------------------------------------------*/
 
 .yt {
   display: block;
-  margin-bottom: 100px;
-  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .yt-header {
-  margin-top: 80px;
+  margin-top: 65px;
   text-align: center;
   font-size: 80px;
   color: black;
@@ -320,11 +392,6 @@ ul li a:hover {
   width: 500px;
   height: 350x;
   padding-top: 45px;
-}
-
-.ritter-wrap:hover {
-  transform: scale(1.05);
-  transition: all 0.4s ease-in-out;
 }
 
 .RR-title {
@@ -401,6 +468,7 @@ footer {
   background: linear-gradient(to bottom, #a6a9ae, #7f8083);
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 80px;
 }
 
 .content-wrap {
@@ -544,20 +612,53 @@ footer {
   opacity: 0;
   line-height: 40px;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(241, 162, 63), rgba(234, 108, 47));
+  background: black;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+#circle-1 {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: rgb(252, 168, 67);
   position: absolute;
   transition: all 0.5s ease-Out;
   top: 20px;
   left: 70px;
 }
 
-.button-mb {
+.button-shop {
   display: inline-flex;
   height: 40px;
   width: 150px;
-  border: 2px solid orange;
+  border: 2px solid black;
   margin: 20px 20px 50px 20px;
-  color: #bfc0c0;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.button-shop:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.button-rr {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid black;
+  margin: 20px 20px 50px 20px;
+  color: black;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.8em;
@@ -573,9 +674,28 @@ footer {
   cursor: pointer;
 }
 
+#button-ritter {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 #button-3 a {
   position: relative;
   transition: all 0.45s ease-Out;
+}
+
+#button-ritter a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#button-ritter:hover #circle-1 {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
 }
 
 #button-3:hover #circle {
@@ -587,11 +707,20 @@ footer {
 }
 
 #button-3:hover a {
-  color: #2d3142;
+  color: #a6a9ae;
   text-decoration: none;
+  font-weight: bold;
+  font-size: small;
 }
 
-#button-3:hover #circle-2 {
+#button-ritter:hover a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+}
+
+#button-ritter:hover #circle-1 {
   width: 200%;
   height: 500%;
   opacity: 1;
@@ -641,8 +770,6 @@ a {
   }
 }
 
-
-
 @media screen and (max-width: 820px) {
   .left-info,
   .right-info {
@@ -667,6 +794,12 @@ a {
 @media (min-width: 1300px) {
   .container {
     max-width: 1140px;
+  }
+
+  .shop-section {
+    height: 600px;
+    background-color: gray;
+    margin-top: 100px;
   }
 }
 
@@ -723,7 +856,7 @@ a {
   }
 
   .responsive {
-    max-width: 650px;
+    max-width: 900px;
   }
 }
 
@@ -752,6 +885,10 @@ a {
     margin-top: -20px;
     border-bottom: 1px solid black;
   }
+  section {
+    background-color: gray;
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 976px) {
@@ -767,9 +904,10 @@ a {
   .navbar-toggler {
     margin-right: 10px;
   }
-  
+
   .RR-title {
     margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -789,24 +927,28 @@ a {
     margin-top: -20px;
     border-bottom: 1px solid black;
   }
-  
 }
 
 @media screen and (max-width: 682px) {
   .ritter-wrap {
-    height: 380px;
+    height: 300px;
+    padding-left: 20px;
   }
 }
 
 @media screen and (max-width: 574px) {
   .ritter-wrap {
-    height: 400px;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 549px) {
   .ritter-wrap {
-    height: 420px;
+    height: 300px;
+  }
+
+  .card-text {
+    font-size: x-large;
   }
 }
 
